@@ -1,0 +1,24 @@
+/* UTILS */
+@import './utils/variables';
+
+/* BASE */
+@import './base/base';
+@import './base/container';
+
+/* COMPONENTS */
+@import './components/section-title';
+@import './components/our-portfolio-works';
+@import './components/our-portfolio-choise';
+
+/* LAYOUT */
+@import './layout/header';
+@import './layout/hero';
+@import './layout/about-us';
+@import './layout/what-we-do';
+@import './layout/our-team';
+@import './layout/customers';
+@import './layout/portfolio';
+@import './layout/footer';
+@import './layout/modal';
+@import './layout/logotype';
+@import './layout/social-links';
