@@ -1,6 +1,7 @@
 .header {
   padding-top: 16px;
   padding-bottom: 16px;
+  background-color: rosybrown;
 }
 .navigation__list {
   display: none;
@@ -12,6 +13,13 @@
 .header__container {
   width: 100%;
   padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logotype {
+    margin-right: 0;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -32,7 +40,15 @@
     width: 1200px;
   }
 }
-
+.burger-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.burger-icon {
+  width: 40px;
+  height: 40px;
+}
 // .header {
 //   padding-top: 24px;
 //   padding-bottom: 25px;
