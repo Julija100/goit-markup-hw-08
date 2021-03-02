@@ -132,9 +132,8 @@ a:focus {
 }
 
 .header {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  background-color: rosybrown;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .header__container {
