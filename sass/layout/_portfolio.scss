@@ -58,7 +58,6 @@
 
   .our-portfolio-list-link-description {
     padding: 20px 24px;
-    z-index: 100;
     background-color: var(--primary-bg-color);
     position: relative;
   }
@@ -83,4 +82,29 @@
   letter-spacing: 0.03em;
   color: var(--primary-btn-text-color);
   transition: transform 250ms linear;
+}
+
+@media screen and (max-width: 767px) {
+  .our-portfolio {
+    padding: 60px 0;
+    
+    .our-portfolio-list {
+      margin-top: 40px;
+    }
+    .our-navigation-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: start;
+      gap: 15px 8px;
+    }
+    .our-portfolio-navigation {
+      & > button {
+        height: 38px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1199px) {
+}
+@media screen and (min-width: 1200px) {
 }
