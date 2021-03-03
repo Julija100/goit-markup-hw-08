@@ -171,3 +171,27 @@
     color: var(--accent-color);
   }
 }
+
+
+
+@media screen and (max-width: 767px) {
+ .backdrop {
+   .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+   }
+   .modal__text {
+     width: 370px;
+     height: auto;
+     line-height: 30px;
+   }
+ }
+}
+@media screen and (max-width: 1199px) {
+}
+@media screen and (min-width: 1200px) {
+}

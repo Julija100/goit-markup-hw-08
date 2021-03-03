@@ -64,3 +64,41 @@
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+
+@media screen and (max-width: 767px) {
+  .customers {
+    padding: 60px 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .container {
+      padding: 0;
+      margin: 0;
+      width: 450px;
+
+      .section-title {
+        margin-top: 0;
+      }
+    }
+    .customers__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .customers__item {
+      width: 210px;
+      height: 90px;
+    }
+    .customers__links {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 1199px) {
+}
+@media screen and (min-width: 1200px) {
+}

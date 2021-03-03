@@ -34,6 +34,40 @@
   margin: 0 auto 0 auto;
 }
 
+@media screen and (max-width: 767px) {
+  .our-team {
+    background-color: #f5f4fa;
+    padding: 60px 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .container {
+      padding: 0;
+      margin: 0;
+      width: 450px;
+    }
+
+    .our-team__list {
+      gap: 30px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .our-team__item {
+      align-items: center;
+
+      picture {
+        height: 460px;
+        width: 450px;
+      }
+      .social__list {
+        margin: 16px 0 24px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .our-team__list {
     margin-top: 30px;

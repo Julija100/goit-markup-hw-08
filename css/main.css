@@ -63,7 +63,6 @@ a:focus {
 .container {
   width: 100%;
   padding: 0 15px;
-  outline: 1px solid red;
 }
 
 @media screen and (min-width: 480px) {
@@ -112,21 +111,21 @@ a:focus {
 }
 
 /* LAYOUT */
-@media screen and (min-width: 480px) {
-  .header__container {
+@media screen and (max-width: 767px) {
+  .header .header__container {
     width: 480px;
     margin: 0 auto;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .header__container {
+@media screen and (min-width: 768px) and (min-width: 1199px) {
+  .header .header__container {
     width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .header__container {
+  .header .header__container {
     width: 1200px;
   }
 }
@@ -182,6 +181,7 @@ a:focus {
     height: 40px;
   }
   .mobile-menu {
+    z-index: 1;
     position: absolute;
     width: 100%;
     max-width: 480px;
@@ -584,6 +584,26 @@ a:focus {
   background-color: #188ce8;
 }
 
+@media screen and (max-width: 767px) {
+  .hero {
+    height: 400px;
+  }
+  .hero .container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+  .hero .hero__title {
+    width: 360px;
+    line-height: 42px;
+    font-size: 26px;
+    margin: 118px 0 0 0;
+    height: auto;
+  }
+}
+
 .about-us {
   padding: 60px 0;
   display: flex;
@@ -627,13 +647,27 @@ a:focus {
     text-align: center;
   }
   .box {
-    display: block;
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 450px;
     height: 120px;
     background: #f5f4fa;
     border-radius: 4px;
-    padding: 25px 193px 25px 193px;
+  }
+  .box__icons {
+    width: 65px;
+    height: 70px;
+  }
+  .description__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 }
 
@@ -781,6 +815,36 @@ a:focus {
   margin: 0 auto 0 auto;
 }
 
+@media screen and (max-width: 767px) {
+  .our-team {
+    background-color: #f5f4fa;
+    padding: 60px 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .our-team .container {
+    padding: 0;
+    margin: 0;
+    width: 450px;
+  }
+  .our-team .our-team__list {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .our-team .our-team__item {
+    align-items: center;
+  }
+  .our-team .our-team__item picture {
+    height: 460px;
+    width: 450px;
+  }
+  .our-team .our-team__item .social__list {
+    margin: 16px 0 24px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .our-team__list {
     margin-top: 30px;
@@ -871,6 +935,36 @@ a:focus {
 .customers__icons {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 767px) {
+  .customers {
+    padding: 60px 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .customers .container {
+    padding: 0;
+    margin: 0;
+    width: 450px;
+  }
+  .customers .container .section-title {
+    margin-top: 0;
+  }
+  .customers .customers__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .customers .customers__item {
+    width: 210px;
+    height: 90px;
+  }
+  .customers .customers__links {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .button-secondary {
@@ -1066,8 +1160,14 @@ a:focus {
   right: auto;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
   .footer .container {
+    margin: 0;
+    width: 450px;
     flex-direction: column;
     align-items: center;
   }
@@ -1114,6 +1214,8 @@ a:focus {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer .container {
     padding: 0;
+    margin: auto;
+    width: auto;
   }
   .footer .container .footer__contacts_and_join {
     display: flex;
@@ -1322,6 +1424,22 @@ a:focus {
 
 .terms a {
   color: var(--accent-color);
+}
+
+@media screen and (max-width: 767px) {
+  .backdrop .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+  }
+  .backdrop .modal__text {
+    width: 370px;
+    height: auto;
+    line-height: 30px;
+  }
 }
 
 .logotype {
