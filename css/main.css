@@ -639,8 +639,8 @@ a:focus {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .description {
-    display: block;
-    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
   }
   .description__item {
     display: inline-block;
@@ -747,14 +747,7 @@ a:focus {
 }
 
 .our-team {
-  background: #f5f4fa;
-  padding: 94px 0;
-}
-
-.our-team__list {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
+  display: block;
 }
 
 .our-team__item {
@@ -788,6 +781,27 @@ a:focus {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin: 0 auto 0 auto;
+}
+
+@media screen and (max-width: 1199px) {
+  .our-team__list {
+    margin-top: 30px;
+  }
+  .section-title {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  .our-team {
+    background: #f5f4fa;
+    padding: 94px 0;
+  }
 }
 
 .customers {

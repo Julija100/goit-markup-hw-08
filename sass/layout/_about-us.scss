@@ -59,8 +59,8 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .description {
-    display: block;
-    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
   }
   .description__item {
     display: inline-block;
