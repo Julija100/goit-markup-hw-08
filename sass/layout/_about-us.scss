@@ -75,19 +75,20 @@
   .description {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
   }
   .description__item {
     display: inline-block;
-    gap: 30px;
     width: 354px;
     height: 251px;
     margin: auto;
   }
 
-  .box {
-    display: block;
-    justify-content: space-between;
-    // height: 120px;
+  .box {  
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #f5f4fa;
     border-radius: 4px;
   }

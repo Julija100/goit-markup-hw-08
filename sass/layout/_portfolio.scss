@@ -95,7 +95,38 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .our-portfolio {
+    padding: 60px 0;
+
+    .our-navigation-list {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      
+    }
+    .our-portfolio-navigation {
+      > button {
+        height: 38px;
+      }
+    }
+    .our-portfolio-list {
+      margin-top: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap:30px;
+    }
+    .our-portfolio-list-item {
+      width: 354px;
+    }
+    .our-portfolio-list-link {
+      height: auto;
+    }
+    .our-portfolio-list-link-description {
+      height: auto;
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {

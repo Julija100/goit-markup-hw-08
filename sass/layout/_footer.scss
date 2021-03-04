@@ -107,17 +107,12 @@
   right: auto;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer {
-    display: flex;
-    justify-content: center;
-
     .container {
-      margin: 0;
-      width: 450px;
       flex-direction: column;
       align-items: center;
-      
+
       .logotype {
         margin: 0 auto 20px;
         display: flex;
@@ -167,9 +162,6 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer .container {
     padding: 0;
-    margin: auto;
-    width: auto;
-
     .footer__contacts_and_join {
       display: flex;
       flex-direction: row;
