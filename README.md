@@ -1,1 +1,1 @@
-file:///C:/Users/Julia/Documents/GitHub/goit-markup-hw-08/portfolio.html
+https://julija100.github.io/goit-markup-hw-08/
