@@ -1052,12 +1052,36 @@ a:focus {
   }
   .our-portfolio .our-portfolio-list {
     margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
   }
   .our-portfolio .our-navigation-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
     gap: 15px 8px;
+  }
+  .our-portfolio .our-portfolio-navigation > button {
+    height: 38px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-portfolio {
+    padding: 94px 0;
+  }
+  .our-portfolio .our-portfolio-list {
+    margin-top: 34px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    gap: 30px;
+  }
+  .our-portfolio .our-navigation-list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
   }
   .our-portfolio .our-portfolio-navigation > button {
     height: 38px;
