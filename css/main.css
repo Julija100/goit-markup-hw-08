@@ -274,6 +274,7 @@ a:focus {
 
 @media screen and (min-width: 768px) {
   .header {
+    border-bottom: 1px solid #ececec;
     height: 80px;
     display: flex;
   }
@@ -361,7 +362,7 @@ a:focus {
   .header {
     padding-top: 32px;
     padding-bottom: 32px;
-    border: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
   }
   .header__container {
     display: flex;
