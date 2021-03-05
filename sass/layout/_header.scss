@@ -82,6 +82,8 @@
   }
 
   .mobile-menu {
+    min-height: 540px;
+    height: 100vh;
     z-index: 1;
     position: absolute;
     width: 100%;
@@ -91,16 +93,17 @@
     transform: translateX(-50%) translateY(-100%);
     background-color: #fff;
     padding: 48px 40px;
-
     transition: transform 500ms linear;
+
+    .mobile-menu__footer {
+      bottom: 0;
+      position: absolute;
+      margin-bottom: 48px;
+    }
   }
 
   .mobile-menu.is-open {
     transform: translateX(-50%) translateY(0%);
-  }
-
-  .mobile-menu-nav {
-    margin-bottom: 302px;
   }
 
   .mobile-menu-nav__item {

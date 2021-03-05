@@ -183,12 +183,18 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .footer__contacts_and_join {
-    display: flex;
-    flex-direction: row;
-  }
+  .footer {
+    .footer__contacts_and_join {
+      display: flex;
+      flex-direction: row;
+    }
 
-  .address__item {
-    margin-top: 9px;
+    .address__item:not(:first-of-type) {
+      margin-top: 9px;
+    }
+    .logotype {
+      margin-bottom: 20px;
+      display: inline-block;
+    }
   }
 }

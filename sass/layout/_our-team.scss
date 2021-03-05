@@ -96,13 +96,20 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .our-team__list {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-  }
   .our-team {
     background: #f5f4fa;
     padding: 94px 0;
+
+    .our-team__list {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+    }
+
+    .our-team__item {
+      .social__list {
+        margin-bottom: 30px;
+      }
+    }
   }
 }
